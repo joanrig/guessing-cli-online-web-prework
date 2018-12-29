@@ -26,7 +26,7 @@ def run_guessing_game
     computer_choice = rand(6) 
     input = gets.chomp
     
-    if input = "exit"
+    if input == "exit"
       puts "Goodbye!"
       break
     
