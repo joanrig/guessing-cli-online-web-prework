@@ -9,8 +9,10 @@ def run_guessing_game
   
     elsif input.is_a?(Integer) && input != computer_choice
       puts "The computer guessed #{computer_choice}."
+      
+    end
     
-    elsif input = "exit"
+    if input = "exit"
       puts "Goodbye!"
       break
     end
