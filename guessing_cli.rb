@@ -37,7 +37,7 @@ def run_guessing_game
       puts "The computer guessed #{computer_choice}."
       
     else 
-      puts "I didn't understand that. Please guess a number between 1 and 6 or type: exit  to exit this program
+      puts "I didn't understand that. Please guess a number between 1 and 6 or type: 'exit'  to exit this program."
     end
   end
 end
