@@ -4,15 +4,15 @@ def run_guessing_game
     computer_choice = rand(6) 
     input = gets.chomp
     
-    if input == computer_choice
-      puts "You guessed the correct number!"
-  
-    elsif input.is_a?(Integer) && input != computer_choice
-      puts "The computer guessed #{computer_choice}."
-      
-    elsif input = "exit"
+    if input = "exit"
       puts "Goodbye!"
       break
+    
+    elsif input == computer_choice
+      puts "You guessed the correct number!"
+  
+    else 
+      puts "The computer guessed #{computer_choice}."
     end
   end
 end
